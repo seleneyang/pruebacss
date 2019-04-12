@@ -1,0 +1,43 @@
+html{
+    min-height: 100%;
+    overflow: hidden;
+}
+body{
+    height: 100vh;
+    padding: 3em;
+    color: #ff6f61;
+    background-color: #fcdc29;
+}
+.line{
+    position: relative;
+    top:10%;
+    width: 14.6em;
+    margin: 0 auto;
+    border-right: 3px solid #ff6f61;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    display: block;
+}
+/* animattion */
+.welcome-message-anim{
+    animation: typeMsg 5s steps(40) 1s 1 normal both,
+    cursorAnim 400ms steps(40) infinite normal;
+}
+@keyframes typeMsg{
+    from{
+        width: 0em;
+    }
+    to{
+        width: 26.0em;
+    }
+}
+@keyframes cursorAnim{
+    from{
+        border-right-color: #ff6f61;
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
